@@ -74,20 +74,30 @@ var config = {
 			}
 		},
 		{
-			module: "newsfeed",
-			position: "bottom_bar",
-			config: {
-				feeds: [
-					{
-						title: "New York Times",
-						url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
-					}
-				],
-				showSourceTitle: true,
-				showPublishDate: true
-			}
+
+	{
+	    module: 'internet-monitor',
+            position: 'top_right',
+            header: 'Internet Monitor',
+            config:{
+                type: '',
+                maxTime: 20000,
+                updateInterval: 0,
+                verbose: false,
+                displayStrength: true,
+                displaySpeed: true,
+                strengthIconSize: 80,
+                maxGaugeScale: 250,
+		wifiSymbol:{
+                    size: 50,
+                    fullColor: '#3afc25',
+                    almostColor: '#ffff0c',
+                    halfColor: '#ff8c00',
+	            noneColor: '#ff1111'
 		},
-	]
+            },
+	}
+]
 
 };
 
